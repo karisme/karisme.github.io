@@ -34,19 +34,18 @@ function Layout({ children, home }) {
                     <>
                     <img
                     src="/images/Senegal.png"
-                    height="400"
-                    weidth="400"
+                    height="200"
+                    weidth="200"
                     className={'${styles.headerHomeImage} ${utilStyles.borderCircle}'}
                     alt={"Picture of Senegal"} />
-                    <h1 className={utilStyles.heading2Xl}>Senegal</h1>
                     </>
                 ) : (
                     <>
                     <Link href="/">
                         <a>
                             <img
-                            height="400"
-                            weidth="400"
+                            height="200"
+                            weidth="200"
                             src="/images/Senegal.png"
                             className={'${styles.headerHomeImage} ${utilStyles.borderCircle}'}
                             alt={"Picture of Senegal"} />
