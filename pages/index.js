@@ -19,11 +19,11 @@ export default function Home({ allPostsData }) {
       </Head>
       <section className={utilStyles.headingMd}>
         <p>
-          <TypeIt> <TypeItFont>Wannabe Software Engineer, trying to make it. Don't @ me after the come up. </TypeItFont> </TypeIt>
+          <TypeIt>Wannabe Software Engineer, trying to make it. Don't @ me after the come up.</TypeIt>
         </p>
       </section>
       <section className={`${utilStyles.headingMd} ${utilStyles.padding1px}`}>
-        <h2 className={utilStyles.headingLg}>Projects</h2>
+        <h2 className={utilStyles.headingLg}>Featured Projects</h2>
       </section>
     </Layout>
   )

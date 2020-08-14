@@ -10,18 +10,70 @@ function Layout({ children, home }) {
     return (
         <div>
             <Particles
-            params={{ 
-                "fps-limit": 25,
-                particles: { 
-                  number: { 
-                    value: 100, 
-                    density: { 
-                      enable: true, 
-                      value_area: 1000, 
-                    } 
-                  }, 
+            params={{
+                "fps_limit": 28,
+                "particles": {
+                    "collisions": {
+                        "enable": false
+                    },
+                    "number": {
+                        "value": 200,
+                        "density": {
+                            "enable": false
+                        }
+                    },
+                    "line_linked": {
+                        "enable": true,
+                        "distance": 30,
+                        "opacity": 0.4
+                    },
+                    "move": {
+                        "speed": 1
+                    },
+                    "opacity": {
+                        "anim": {
+                            "enable": true,
+                            "opacity_min": 0.05,
+                            "speed": 2,
+                            "sync": false
+                        },
+                        "value": 0.4
+                    }
                 },
-            }}
+                "polygon": {
+                    "enable": true,
+                    "scale": 0.5,
+                    "type": "inline",
+                    "move": {
+                        "radius": 10
+                    },
+                    "url": "../public/small-deer.svg",
+                    "inline": {
+                        "arrangement": "equidistant"
+                    },
+                    "draw": {
+                        "enable": true,
+                        "stroke": {
+                            "color": "rgba(255, 255, 255, .2)"
+                        }
+                    }
+                },
+                "retina_detect": false,
+                "interactivity": {
+                    "events": {
+                        "onhover": {
+                            "enable": true,
+                            "mode": "bubble"
+                        }
+                    },
+                    "modes": {
+                        "bubble": {
+                            "size": 6,
+                            "distance": 40
+                        }
+                    }
+                }
+            }} 
             className={ utilStyles.particles }
             /> 
         <div className={styles.container}>
@@ -29,36 +81,6 @@ function Layout({ children, home }) {
                 <link rel="icon" href="/favicon.ico" />
                 
             </Head>
-            <header className={styles.header}>
-                {home ? (
-                    <>
-                    <img
-                    src="/images/Senegal.png"
-                    height="200"
-                    weidth="200"
-                    className={'${styles.headerHomeImage} ${utilStyles.borderCircle}'}
-                    alt={"Picture of Senegal"} />
-                    </>
-                ) : (
-                    <>
-                    <Link href="/">
-                        <a>
-                            <img
-                            height="200"
-                            weidth="200"
-                            src="/images/Senegal.png"
-                            className={'${styles.headerHomeImage} ${utilStyles.borderCircle}'}
-                            alt={"Picture of Senegal"} />
-                        </a>
-                    </Link>
-                    <h2 className={utilStyles.headingLg}>
-                        <Link href="/">
-                            <a className={utilStyles.colorInherit}>Senegal</a>
-                        </Link>
-                    </h2>
-                    </>
-                )}
-            </header>
             <main>{children}</main>
             {!home && (
                 <div className={styles.backToHome}>
