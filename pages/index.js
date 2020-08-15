@@ -19,7 +19,22 @@ export default function Home({ allPostsData }) {
       </Head>
       <section className={utilStyles.headingMd}>
         <p>
-          <TypeIt>Wannabe Software Engineer, trying to make it. Don't @ me after the come up.</TypeIt>
+          <TypeIt 
+            options={{
+              lifelike: true,
+              loop: true
+            }}
+            getBeforeInit={instance => {
+              instance
+                .type("Wannabe Software Engineer, trying to make it. Don't ev")
+                .pause(250)
+                .delete(2)
+                .pause(200)
+                .type("@ me after the come up");
+          
+              return instance;
+            }}
+          />
         </p>
       </section>
       <section className={`${utilStyles.headingMd} ${utilStyles.padding1px}`}>
