@@ -103,25 +103,7 @@ function Layout(_ref) {
             "speed": 2,
             "sync": false
           },
-          "value": 0.4
-        }
-      },
-      "polygon": {
-        "enable": true,
-        "scale": 0.5,
-        "type": "inline",
-        "move": {
-          "radius": 10
-        },
-        "url": "../public/small-deer.svg",
-        "inline": {
-          "arrangement": "equidistant"
-        },
-        "draw": {
-          "enable": true,
-          "stroke": {
-            "color": "rgba(255, 255, 255, .2)"
-          }
+          "value": 1.6
         }
       },
       "retina_detect": false,
@@ -152,14 +134,14 @@ function Layout(_ref) {
     __self: this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 79,
+      lineNumber: 61,
       columnNumber: 9
     }
   }, __jsx(next_head__WEBPACK_IMPORTED_MODULE_2___default.a, {
     __self: this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 80,
+      lineNumber: 62,
       columnNumber: 13
     }
   }, __jsx("link", {
@@ -168,14 +150,14 @@ function Layout(_ref) {
     __self: this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 81,
+      lineNumber: 63,
       columnNumber: 17
     }
   })), __jsx("main", {
     __self: this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 84,
+      lineNumber: 66,
       columnNumber: 13
     }
   }, children), !home && __jsx("div", {
@@ -183,7 +165,7 @@ function Layout(_ref) {
     __self: this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 86,
+      lineNumber: 68,
       columnNumber: 17
     }
   }, __jsx(next_link__WEBPACK_IMPORTED_MODULE_3___default.a, {
@@ -191,14 +173,14 @@ function Layout(_ref) {
     __self: this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 87,
+      lineNumber: 69,
       columnNumber: 21
     }
   }, __jsx("a", {
     __self: this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 88,
+      lineNumber: 70,
       columnNumber: 25
     }
   }, " \u2190 Back to home")))));
@@ -37693,7 +37675,7 @@ if (true) {
 
 /***/ }),
 
-/***/ 1:
+/***/ 2:
 /*!*****************************************************************************************************************************************************************************!*\
   !*** multi next-client-pages-loader?page=%2F&absolutePagePath=%2Fmnt%2Fc%2FUsers%2Fkalik%2FDocuments%2FPERSONAL%2FPERSONAL_PROJECTS%2Fkarisme.github.io%2Fpages%2Findex.js ***!
   \*****************************************************************************************************************************************************************************/
@@ -37716,5 +37698,5 @@ module.exports = dll_c2e10d183b950a67d9e7;
 
 /***/ })
 
-},[[1,"static/runtime/webpack.js"]]]);
+},[[2,"static/runtime/webpack.js"]]]);
 //# sourceMappingURL=index.js.map

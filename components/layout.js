@@ -37,25 +37,7 @@ function Layout({ children, home }) {
                             "speed": 2,
                             "sync": false
                         },
-                        "value": 0.4
-                    }
-                },
-                "polygon": {
-                    "enable": true,
-                    "scale": 0.5,
-                    "type": "inline",
-                    "move": {
-                        "radius": 10
-                    },
-                    "url": "../public/small-deer.svg",
-                    "inline": {
-                        "arrangement": "equidistant"
-                    },
-                    "draw": {
-                        "enable": true,
-                        "stroke": {
-                            "color": "rgba(255, 255, 255, .2)"
-                        }
+                        "value": 1.6
                     }
                 },
                 "retina_detect": false,
