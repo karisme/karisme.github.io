@@ -4,14 +4,8 @@ import utilStyles from "../styles/utils.module.css"
 import Link from 'next/link'
 import TypeIt from "typeit-react";
 import Date from '../components/date'
-import { getSortedPostsData } from '../lib/fetch-parse.js'
 
-const TypeItFont = ({ children }) => {
-  return <span style={{ color: "#105c03" }}>{children}</span>;
-};
-
-
-export default function Home({ allPostsData }) {
+export default function Home() {
   return (
     <Layout home>
       <Head>
@@ -42,18 +36,6 @@ export default function Home({ allPostsData }) {
       </section>
     </Layout>
   )
-}
-
-export async function getStaticProps() {
-  // getStaticProps runs only on the server-side. It will never run on the client-side. 
-  // It won’t even be included in the JS bundle for the browser. I can put API requests, database queries etc...
-  // In prod, only run at build time so need server-side rendering if ish is changing -> SEE BELOW
-  const allPostsData = getSortedPostsData()
-  return {
-    props: {
-      allPostsData
-    }
-  }
 }
 
 // if i want to use JS to load, and keep static parts: https://swr.vercel.app/
