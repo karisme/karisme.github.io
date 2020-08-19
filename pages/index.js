@@ -4,6 +4,7 @@ import utilStyles from "../styles/utils.module.css"
 import Link from 'next/link'
 import TypeIt from "typeit-react";
 import Date from '../components/date'
+import Baffle from "baffle-react";
 
 export default function Home() {
   return (
@@ -11,6 +12,15 @@ export default function Home() {
       <Head>
         <title>{siteTitle}</title>
       </Head>
+      <Baffle
+        speed={125}
+        characters="█▓█ ▒░/▒░ █░▒▓/ █▒▒ ▓▒▓/█ ░█▒/ ▒▓░ █<░▒ ▓/░"
+        exclude={[" ", "!"]}
+        obfuscate={false}
+        revealDuration={5000}
+      > 
+        I'd like to add baffling because it looks cool. 
+        </Baffle>
       <section className={utilStyles.headingMd}>
         <p>
           <TypeIt 
