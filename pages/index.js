@@ -8,11 +8,8 @@ import Baffle from "baffle-react";
 
 export default function Home() {
   return (
-    <Layout home>
-      <Head>
-        <title>{siteTitle}</title>
-      </Head>
-      <Baffle
+    <>
+    <Baffle
         speed={125}
         characters="█▓█ ▒░/▒░ █░▒▓/ █▒▒ ▓▒▓/█ ░█▒/ ▒▓░ █<░▒ ▓/░"
         exclude={[" ", "!"]}
@@ -20,7 +17,12 @@ export default function Home() {
         revealDuration={5000}
       > 
         I'd like to add baffling because it looks cool. 
-        </Baffle>
+    </Baffle>
+    <Layout home>
+      <Head>
+        <title>{siteTitle}</title>
+        <link rel="icon" type="image/x-icon" href="../public/favicon.ico" />
+      </Head>
       <section className={utilStyles.headingMd}>
         <p>
           <TypeIt 
@@ -45,6 +47,7 @@ export default function Home() {
         <h2 className={utilStyles.headingLg}>Featured Projects</h2>
       </section>
     </Layout>
+    </>
   )
 }
 
