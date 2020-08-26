@@ -56,3 +56,15 @@
     position: absolute;
     width: 100%;
   }
+
+  .intro {
+    display: flex;
+    font-family: 'Courier New', Courier, monospace;
+    color: #ffffff;
+    font-size: medium;
+    /* text-align: center; TODO figure out how to make this work*/
+  }
+
+  .intro > div {
+    flex: 1;
+  }
