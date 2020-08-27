@@ -61,19 +61,17 @@ function Layout({ children, home }) {
             className={ utilStyles.particles }
             />
             <Navbar sticky='top' collapseOnSelect expand="lg" variant="dark">
-                <Navbar.Brand href="#home">Ali Ka</Navbar.Brand>
+                <Navbar.Brand href="/">Ali Ka</Navbar.Brand>
                 <Navbar.Toggle aria-controls="responsive-navbar-nav" />
                 <Navbar.Collapse id="responsive-navbar-nav">
                     <Nav className="mr-auto">
-                    <Nav.Link href="/bio">About</Nav.Link>
-                    <Nav.Link href="#pricing">Portfolio</Nav.Link>
-                    <Nav.Link href="#pricing">Bookshelf</Nav.Link>
+                        <Nav.Link href="/coming-soon">About</Nav.Link>
+                        <Nav.Link href="/coming-soon">Portfolio</Nav.Link>
+                        <Nav.Link href="/coming-soon">Bookshelf</Nav.Link>
                     </Nav>
                     <Nav>
-                    <Nav.Link href="#deets">Resume</Nav.Link>
-                    {/* <Nav.Link eventKey={2} href="#memes">
-                        Dank memes
-                    </Nav.Link> */}
+                        <Nav.Link href="/coming-soon">Resume</Nav.Link>
+                        <Nav.Link target="_blank" href="https://github.com/karisme">Github</Nav.Link>
                     </Nav>
                 </Navbar.Collapse>
         </Navbar>
