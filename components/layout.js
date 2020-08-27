@@ -3,6 +3,8 @@ import Head from "next/head"
 import Link from "next/link"
 import utilStyles from "../styles/utils.module.css"
 import Particles from 'react-particles-js'
+import Navbar from 'react-bootstrap/Navbar'
+import Nav from 'react-bootstrap/Nav';
 
 export const siteTitle = "Ali's Personal Website"
 
@@ -57,7 +59,24 @@ function Layout({ children, home }) {
                 }
             }} 
             className={ utilStyles.particles }
-            /> 
+            />
+            <Navbar sticky='top' collapseOnSelect expand="lg" variant="dark">
+                <Navbar.Brand href="#home">Ali Ka</Navbar.Brand>
+                <Navbar.Toggle aria-controls="responsive-navbar-nav" />
+                <Navbar.Collapse id="responsive-navbar-nav">
+                    <Nav className="mr-auto">
+                    <Nav.Link href="/bio">About</Nav.Link>
+                    <Nav.Link href="#pricing">Portfolio</Nav.Link>
+                    <Nav.Link href="#pricing">Bookshelf</Nav.Link>
+                    </Nav>
+                    <Nav>
+                    <Nav.Link href="#deets">Resume</Nav.Link>
+                    {/* <Nav.Link eventKey={2} href="#memes">
+                        Dank memes
+                    </Nav.Link> */}
+                    </Nav>
+                </Navbar.Collapse>
+        </Navbar>
         <div className={styles.container}>
             <Head>
                 <link rel="icon" href="/favicon.ico" />

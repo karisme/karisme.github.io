@@ -55,14 +55,16 @@
   .particles {
     position: absolute;
     width: 100%;
+    height: 100%;
   }
 
+  /* TODO FIX BUG CONCERING SCREEN RESIZING */
+
   .intro {
-    display: flex;
     font-family: 'Courier New', Courier, monospace;
     color: #ffffff;
     font-size: medium;
-    /* text-align: center; TODO figure out how to make this work*/
+    text-align: center;
   }
 
   .intro > div {

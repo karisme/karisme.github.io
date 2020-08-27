@@ -10,15 +10,15 @@ import Baffle from "baffle-react";
 export default function Home() {
   return (
     <>
-    
     <Layout home>
       <Head>
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous" />
         <title>{siteTitle}</title>
         <link rel="icon" type="image/x-icon" href="../public/favicon.ico" />
-      </Head>
+      </Head> 
       <section className={utilStyles.headingMd}>
+        <div className={utilStyles.intro}>Hello! My name is Ali, welcome to my website!</div>
         <div className={utilStyles.intro}>
-          Hello! My name is Ali, I'm
           <TypeIt
             options={{
               lifelike: true,
@@ -26,7 +26,7 @@ export default function Home() {
             }}
             getBeforeInit={instance => {
               instance
-                .type(" a Software Engineer")
+                .type("I'm a Software Engineer")
                 .pause(350)
                 .delete(19)
                 .pause(300)
@@ -43,6 +43,7 @@ export default function Home() {
                 .delete(8)
                 .pause(300)
                 .type("an Anime addict")
+                .go()
           
               return instance;
             }}
@@ -62,6 +63,7 @@ export default function Home() {
             > Featured Projects
           </Baffle> 
         </h2>
+
       </section>
     </Layout>
     </>
