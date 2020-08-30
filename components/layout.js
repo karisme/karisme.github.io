@@ -70,16 +70,12 @@ function Layout({ children, home }) {
                         <Nav.Link href="/coming-soon">Bookshelf</Nav.Link>
                     </Nav>
                     <Nav>
-                        <Nav.Link href="/coming-soon">Resume</Nav.Link>
+                        <Nav.Link href="/resume.pdf" download="Ali_Ka_Resume">Resume</Nav.Link>
                         <Nav.Link target="_blank" href="https://github.com/karisme">Github</Nav.Link>
                     </Nav>
                 </Navbar.Collapse>
         </Navbar>
         <div className={styles.container}>
-            <Head>
-                <link rel="icon" href="/favicon.ico" />
-                
-            </Head>
             <main>{children}</main>
             {!home && (
                 <div className={styles.backToHome}>

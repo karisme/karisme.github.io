@@ -1,4 +1,4 @@
-function Project({ name }) {
+function Project({ name, short }) {
     return (
         <div>
 
