@@ -1,0 +1,28 @@
+.container {    
+    border-radius: 4px;
+    border: 1px transparent #eeeeee;
+    display: flex;
+    font-family: 'Courier New', Courier, monospace;
+    color: #ffffff;
+    margin-top: 10px;
+    margin-bottom: 25px;
+}
+
+.image {
+    margin: 10px;
+    width: 30%;
+    height: 125px;
+    position: relative;
+    overflow: hidden;
+    border-radius: 55%;
+}
+
+.description {
+    font-size: medium;
+    margin: 10px;
+    width: 150%;
+  }
+
+  .title {
+
+  }

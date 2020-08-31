@@ -5,6 +5,7 @@ import Link from 'next/link'
 import TypeIt from "typeit-react";
 import Date from '../components/date'
 import Baffle from "baffle-react";
+import Project from '../components/project';
 
 
 export default function Home() {
@@ -58,8 +59,9 @@ export default function Home() {
             > Featured Projects
           </Baffle> 
         </h2>
-
       </section>
+      <Project name="stock_bot" length="short"></Project>
+      <Project name="hairable" length="short"></Project>
     </Layout>
     </>
   )
