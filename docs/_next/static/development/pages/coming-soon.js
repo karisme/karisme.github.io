@@ -175,7 +175,8 @@ function Layout(_ref) {
       columnNumber: 21
     }
   }, __jsx(react_bootstrap_Nav__WEBPACK_IMPORTED_MODULE_7__["default"].Link, {
-    href: "/coming-soon",
+    href: "/resume.pdf",
+    download: "Ali_Ka_Resume",
     __self: this,
     __source: {
       fileName: _jsxFileName,
@@ -199,27 +200,11 @@ function Layout(_ref) {
       lineNumber: 78,
       columnNumber: 9
     }
-  }, __jsx(next_head__WEBPACK_IMPORTED_MODULE_2___default.a, {
+  }, __jsx("main", {
     __self: this,
     __source: {
       fileName: _jsxFileName,
       lineNumber: 79,
-      columnNumber: 13
-    }
-  }, __jsx("link", {
-    rel: "icon",
-    href: "/favicon.ico",
-    __self: this,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 80,
-      columnNumber: 17
-    }
-  })), __jsx("main", {
-    __self: this,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 83,
       columnNumber: 13
     }
   }, children), !home && __jsx("div", {
@@ -227,7 +212,7 @@ function Layout(_ref) {
     __self: this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 85,
+      lineNumber: 81,
       columnNumber: 17
     }
   }, __jsx(next_link__WEBPACK_IMPORTED_MODULE_3___default.a, {
@@ -235,14 +220,14 @@ function Layout(_ref) {
     __self: this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 86,
+      lineNumber: 82,
       columnNumber: 21
     }
   }, __jsx("a", {
     __self: this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 87,
+      lineNumber: 83,
       columnNumber: 25
     }
   }, " \u2190 Back to home")))));
@@ -24536,7 +24521,7 @@ if (true) {
 
 /***/ }),
 
-/***/ 1:
+/***/ 3:
 /*!**********************************************************************************************************************************************************************************************!*\
   !*** multi next-client-pages-loader?page=%2Fcoming-soon&absolutePagePath=%2Fmnt%2Fc%2FUsers%2Fkalik%2FDocuments%2FPERSONAL%2FPERSONAL_PROJECTS%2Fkarisme.github.io%2Fpages%2Fcoming-soon.js ***!
   \**********************************************************************************************************************************************************************************************/
@@ -24559,5 +24544,5 @@ module.exports = dll_c2e10d183b950a67d9e7;
 
 /***/ })
 
-},[[1,"static/runtime/webpack.js"]]]);
+},[[3,"static/runtime/webpack.js"]]]);
 //# sourceMappingURL=coming-soon.js.map

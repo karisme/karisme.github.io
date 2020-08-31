@@ -175,7 +175,8 @@ function Layout(_ref) {
       columnNumber: 21
     }
   }, __jsx(react_bootstrap_Nav__WEBPACK_IMPORTED_MODULE_7__["default"].Link, {
-    href: "/coming-soon",
+    href: "/resume.pdf",
+    download: "Ali_Ka_Resume",
     __self: this,
     __source: {
       fileName: _jsxFileName,
@@ -199,27 +200,11 @@ function Layout(_ref) {
       lineNumber: 78,
       columnNumber: 9
     }
-  }, __jsx(next_head__WEBPACK_IMPORTED_MODULE_2___default.a, {
+  }, __jsx("main", {
     __self: this,
     __source: {
       fileName: _jsxFileName,
       lineNumber: 79,
-      columnNumber: 13
-    }
-  }, __jsx("link", {
-    rel: "icon",
-    href: "/favicon.ico",
-    __self: this,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 80,
-      columnNumber: 17
-    }
-  })), __jsx("main", {
-    __self: this,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 83,
       columnNumber: 13
     }
   }, children), !home && __jsx("div", {
@@ -227,7 +212,7 @@ function Layout(_ref) {
     __self: this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 85,
+      lineNumber: 81,
       columnNumber: 17
     }
   }, __jsx(next_link__WEBPACK_IMPORTED_MODULE_3___default.a, {
@@ -235,14 +220,14 @@ function Layout(_ref) {
     __self: this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 86,
+      lineNumber: 82,
       columnNumber: 21
     }
   }, __jsx("a", {
     __self: this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 87,
+      lineNumber: 83,
       columnNumber: 25
     }
   }, " \u2190 Back to home")))));
@@ -22826,7 +22811,7 @@ function App(_ref) {
     rel: "stylesheet",
     href: "https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css",
     integrity: "sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO",
-    crossorigin: "anonymous",
+    crossOrigin: "anonymous",
     __self: this,
     __source: {
       fileName: _jsxFileName,
@@ -22843,7 +22828,7 @@ function App(_ref) {
   }, _components_layout__WEBPACK_IMPORTED_MODULE_4__["siteTitle"]), __jsx("link", {
     rel: "icon",
     type: "image/x-icon",
-    href: "../public/favicon.ico",
+    href: "favicon.ico",
     __self: this,
     __source: {
       fileName: _jsxFileName,

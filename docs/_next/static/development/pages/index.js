@@ -208,7 +208,8 @@ function Layout(_ref) {
       columnNumber: 21
     }
   }, __jsx(react_bootstrap_Nav__WEBPACK_IMPORTED_MODULE_7__["default"].Link, {
-    href: "/coming-soon",
+    href: "/resume.pdf",
+    download: "Ali_Ka_Resume",
     __self: this,
     __source: {
       fileName: _jsxFileName,
@@ -232,27 +233,11 @@ function Layout(_ref) {
       lineNumber: 78,
       columnNumber: 9
     }
-  }, __jsx(next_head__WEBPACK_IMPORTED_MODULE_2___default.a, {
+  }, __jsx("main", {
     __self: this,
     __source: {
       fileName: _jsxFileName,
       lineNumber: 79,
-      columnNumber: 13
-    }
-  }, __jsx("link", {
-    rel: "icon",
-    href: "/favicon.ico",
-    __self: this,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 80,
-      columnNumber: 17
-    }
-  })), __jsx("main", {
-    __self: this,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 83,
       columnNumber: 13
     }
   }, children), !home && __jsx("div", {
@@ -260,7 +245,7 @@ function Layout(_ref) {
     __self: this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 85,
+      lineNumber: 81,
       columnNumber: 17
     }
   }, __jsx(next_link__WEBPACK_IMPORTED_MODULE_3___default.a, {
@@ -268,14 +253,14 @@ function Layout(_ref) {
     __self: this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 86,
+      lineNumber: 82,
       columnNumber: 21
     }
   }, __jsx("a", {
     __self: this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 87,
+      lineNumber: 83,
       columnNumber: 25
     }
   }, " \u2190 Back to home")))));
@@ -329,6 +314,154 @@ if (true) {
       /*! !../node_modules/css-loader/dist/cjs.js??ref--5-oneOf-2-1!../node_modules/next/dist/compiled/postcss-loader??__nextjs_postcss!./layout.module.css */ "./node_modules/css-loader/dist/cjs.js?!./node_modules/next/dist/compiled/postcss-loader/index.js?!./components/layout.module.css",
       function () {
         var newContent = __webpack_require__(/*! !../node_modules/css-loader/dist/cjs.js??ref--5-oneOf-2-1!../node_modules/next/dist/compiled/postcss-loader??__nextjs_postcss!./layout.module.css */ "./node_modules/css-loader/dist/cjs.js?!./node_modules/next/dist/compiled/postcss-loader/index.js?!./components/layout.module.css");
+
+        if (typeof newContent === 'string') {
+          newContent = [[module.i, newContent, '']];
+        }
+        
+        update(newContent);
+      }
+    )
+  }
+
+  module.hot.dispose(function() { 
+    update();
+  });
+}
+
+/***/ }),
+
+/***/ "./components/project.js":
+/*!*******************************!*\
+  !*** ./components/project.js ***!
+  \*******************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var _project_module_css__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./project.module.css */ "./components/project.module.css");
+/* harmony import */ var _project_module_css__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_project_module_css__WEBPACK_IMPORTED_MODULE_1__);
+/* harmony import */ var baffle_react__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! baffle-react */ "./node_modules/baffle-react/es/index.js");
+/* harmony import */ var _public_project_data_project_descriptions__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../public/project_data/project_descriptions */ "./public/project_data/project_descriptions.js");
+var _jsxFileName = "/mnt/c/Users/kalik/Documents/PERSONAL/PERSONAL_PROJECTS/karisme.github.io/components/project.js";
+
+var __jsx = react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement;
+
+
+ // Component was built to be used anywhere project information is to be displayed, namely the landing page
+// and the portfolio page. Whenever this component is to be used, refer to /public/project_data/project_descriptions to see 
+// which name and length is desired. The picture associated with each project will always match the definition found in the description file.
+
+function Project(_ref) {
+  var name = _ref.name,
+      length = _ref.length;
+  var image_source = "project_data/" + name + ".png";
+  return __jsx("div", {
+    className: _project_module_css__WEBPACK_IMPORTED_MODULE_1___default.a.container,
+    __self: this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 12,
+      columnNumber: 9
+    }
+  }, __jsx("img", {
+    className: _project_module_css__WEBPACK_IMPORTED_MODULE_1___default.a.image,
+    src: image_source,
+    alt: "Project Picture",
+    __self: this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 13,
+      columnNumber: 13
+    }
+  }), __jsx("div", {
+    className: _project_module_css__WEBPACK_IMPORTED_MODULE_1___default.a.description,
+    __self: this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 14,
+      columnNumber: 13
+    }
+  }, __jsx(baffle_react__WEBPACK_IMPORTED_MODULE_2__["default"], {
+    speed: 115,
+    characters: "\u2588\u2593\u2588 \u2592\u2591/\u2592\u2591 \u2588\u2591\u2592\u2593/ \u2588\u2592\u2592 \u2593\u2592\u2593/\u2588 \u2591\u2588\u2592/ \u2592\u2593\u2591 \u2588<\u2591\u2592 \u2593/\u2591",
+    exclude: [" ", "!"],
+    obfuscate: false,
+    revealDuration: 8000,
+    __self: this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 15,
+      columnNumber: 17
+    }
+  }, " ", _public_project_data_project_descriptions__WEBPACK_IMPORTED_MODULE_3__["desc"][name]["title"]), __jsx("br", {
+    __self: this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 23,
+      columnNumber: 17
+    }
+  }), __jsx("br", {
+    __self: this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 24,
+      columnNumber: 17
+    }
+  }), _public_project_data_project_descriptions__WEBPACK_IMPORTED_MODULE_3__["desc"][name][length]));
+}
+
+/* harmony default export */ __webpack_exports__["default"] = (Project);
+
+/***/ }),
+
+/***/ "./components/project.module.css":
+/*!***************************************!*\
+  !*** ./components/project.module.css ***!
+  \***************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+var content = __webpack_require__(/*! !../node_modules/css-loader/dist/cjs.js??ref--5-oneOf-2-1!../node_modules/next/dist/compiled/postcss-loader??__nextjs_postcss!./project.module.css */ "./node_modules/css-loader/dist/cjs.js?!./node_modules/next/dist/compiled/postcss-loader/index.js?!./components/project.module.css");
+
+if (typeof content === 'string') {
+  content = [[module.i, content, '']];
+}
+
+var options = {}
+
+options.insert = function(element){// These elements should always exist. If they do not,
+// this code should fail.
+var anchorElement=document.querySelector('#__next_css__DO_NOT_USE__');var parentNode=anchorElement.parentNode;// Normally <head>
+// Each style tag should be placed right before our
+// anchor. By inserting before and not after, we do not
+// need to track the last inserted element.
+parentNode.insertBefore(element,anchorElement)// Remember: this is development only code.
+//
+// After styles are injected, we need to remove the
+// <style> tags that set `body { display: none; }`.
+//
+// We use `requestAnimationFrame` as a way to defer
+// this operation since there may be multiple style
+// tags.
+;(self.requestAnimationFrame||setTimeout)(function(){for(var x=document.querySelectorAll('[data-next-hide-fouc]'),i=x.length;i--;){x[i].parentNode.removeChild(x[i]);}});};
+options.singleton = false;
+
+var update = __webpack_require__(/*! ../node_modules/style-loader/dist/runtime/injectStylesIntoStyleTag.js */ "./node_modules/style-loader/dist/runtime/injectStylesIntoStyleTag.js")(content, options);
+
+if (content.locals) {
+  module.exports = content.locals;
+}
+
+if (true) {
+  if (!content.locals) {
+    module.hot.accept(
+      /*! !../node_modules/css-loader/dist/cjs.js??ref--5-oneOf-2-1!../node_modules/next/dist/compiled/postcss-loader??__nextjs_postcss!./project.module.css */ "./node_modules/css-loader/dist/cjs.js?!./node_modules/next/dist/compiled/postcss-loader/index.js?!./components/project.module.css",
+      function () {
+        var newContent = __webpack_require__(/*! !../node_modules/css-loader/dist/cjs.js??ref--5-oneOf-2-1!../node_modules/next/dist/compiled/postcss-loader??__nextjs_postcss!./project.module.css */ "./node_modules/css-loader/dist/cjs.js?!./node_modules/next/dist/compiled/postcss-loader/index.js?!./components/project.module.css");
 
         if (typeof newContent === 'string') {
           newContent = [[module.i, newContent, '']];
@@ -1320,6 +1453,26 @@ exports.locals = {
 	"headerImage": "layout_headerImage__2h5On",
 	"headerHomeImage": "layout_headerHomeImage__3qo1_",
 	"backToHome": "layout_backToHome__1vZsp"
+};
+
+/***/ }),
+
+/***/ "./node_modules/css-loader/dist/cjs.js?!./node_modules/next/dist/compiled/postcss-loader/index.js?!./components/project.module.css":
+/*!******************************************************************************************************************************************************************!*\
+  !*** ./node_modules/css-loader/dist/cjs.js??ref--5-oneOf-2-1!./node_modules/next/dist/compiled/postcss-loader??__nextjs_postcss!./components/project.module.css ***!
+  \******************************************************************************************************************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+exports = module.exports = __webpack_require__(/*! ../node_modules/css-loader/dist/runtime/api.js */ "./node_modules/css-loader/dist/runtime/api.js")(true);
+// Module
+exports.push([module.i, ".project_container__3gquw {    \r\n    border-radius: 4px;\r\n    border: 1px transparent #eeeeee;\r\n    display: flex;\r\n    font-family: 'Courier New', Courier, monospace;\r\n    color: #ffffff;\r\n    margin-top: 10px;\r\n    margin-bottom: 25px;\r\n}\r\n\r\n.project_image__14Prp {\r\n    margin: 10px;\r\n    width: 30%;\r\n    height: 125px;\r\n    position: relative;\r\n    overflow: hidden;\r\n    border-radius: 55%;\r\n}\r\n\r\n.project_description__2C2dc {\r\n    font-size: medium;\r\n    margin: 10px;\r\n    width: 150%;\r\n  }\r\n\r\n  .project_title__JUksZ {\r\n\r\n  }", "",{"version":3,"sources":["/mnt/c/Users/kalik/Documents/PERSONAL/PERSONAL_PROJECTS/karisme.github.io/components/project.module.css"],"names":[],"mappings":"AAAA;IACI,kBAAkB;IAClB,+BAA+B;IAC/B,aAAa;IACb,8CAA8C;IAC9C,cAAc;IACd,gBAAgB;IAChB,mBAAmB;AACvB;;AAEA;IACI,YAAY;IACZ,UAAU;IACV,aAAa;IACb,kBAAkB;IAClB,gBAAgB;IAChB,kBAAkB;AACtB;;AAEA;IACI,iBAAiB;IACjB,YAAY;IACZ,WAAW;EACb;;EAEA;;EAEA","file":"project.module.css","sourcesContent":[".container {    \r\n    border-radius: 4px;\r\n    border: 1px transparent #eeeeee;\r\n    display: flex;\r\n    font-family: 'Courier New', Courier, monospace;\r\n    color: #ffffff;\r\n    margin-top: 10px;\r\n    margin-bottom: 25px;\r\n}\r\n\r\n.image {\r\n    margin: 10px;\r\n    width: 30%;\r\n    height: 125px;\r\n    position: relative;\r\n    overflow: hidden;\r\n    border-radius: 55%;\r\n}\r\n\r\n.description {\r\n    font-size: medium;\r\n    margin: 10px;\r\n    width: 150%;\r\n  }\r\n\r\n  .title {\r\n\r\n  }"]}]);
+// Exports
+exports.locals = {
+	"container": "project_container__3gquw",
+	"image": "project_image__14Prp",
+	"description": "project_description__2C2dc",
+	"title": "project_title__JUksZ"
 };
 
 /***/ }),
@@ -42595,9 +42748,11 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var typeit_react__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! typeit-react */ "./node_modules/typeit-react/dist/typeit-react.es.min.js");
 /* harmony import */ var _components_date__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ../components/date */ "./components/date.js");
 /* harmony import */ var baffle_react__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! baffle-react */ "./node_modules/baffle-react/es/index.js");
+/* harmony import */ var _components_project__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! ../components/project */ "./components/project.js");
 var _jsxFileName = "/mnt/c/Users/kalik/Documents/PERSONAL/PERSONAL_PROJECTS/karisme.github.io/pages/index.js";
 
 var __jsx = react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement;
+
 
 
 
@@ -42611,50 +42766,15 @@ function Home() {
     __self: this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 13,
+      lineNumber: 14,
       columnNumber: 5
     }
-  }, __jsx(next_head__WEBPACK_IMPORTED_MODULE_1___default.a, {
-    __self: this,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 14,
-      columnNumber: 7
-    }
-  }, __jsx("link", {
-    rel: "stylesheet",
-    href: "https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css",
-    integrity: "sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO",
-    crossorigin: "anonymous",
-    __self: this,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 15,
-      columnNumber: 9
-    }
-  }), __jsx("title", {
-    __self: this,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 16,
-      columnNumber: 9
-    }
-  }, _components_layout__WEBPACK_IMPORTED_MODULE_2__["siteTitle"]), __jsx("link", {
-    rel: "icon",
-    type: "image/x-icon",
-    href: "../public/favicon.ico",
-    __self: this,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 17,
-      columnNumber: 9
-    }
-  })), __jsx("section", {
+  }, __jsx("section", {
     className: _styles_utils_module_css__WEBPACK_IMPORTED_MODULE_3___default.a.headingMd,
     __self: this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 19,
+      lineNumber: 15,
       columnNumber: 7
     }
   }, __jsx("div", {
@@ -42662,7 +42782,7 @@ function Home() {
     __self: this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 20,
+      lineNumber: 16,
       columnNumber: 9
     }
   }, "Hello! My name is Ali, welcome to my website!"), __jsx("div", {
@@ -42670,7 +42790,7 @@ function Home() {
     __self: this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 21,
+      lineNumber: 17,
       columnNumber: 9
     }
   }, __jsx(typeit_react__WEBPACK_IMPORTED_MODULE_5__["default"], {
@@ -42685,21 +42805,21 @@ function Home() {
     __self: this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 22,
+      lineNumber: 18,
       columnNumber: 11
     }
   }))), __jsx("br", {
     __self: this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 53,
+      lineNumber: 49,
       columnNumber: 7
     }
   }), __jsx("br", {
     __self: this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 54,
+      lineNumber: 50,
       columnNumber: 7
     }
   }), __jsx("section", {
@@ -42707,7 +42827,7 @@ function Home() {
     __self: this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 55,
+      lineNumber: 51,
       columnNumber: 7
     }
   }, __jsx("h2", {
@@ -42715,7 +42835,7 @@ function Home() {
     __self: this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 56,
+      lineNumber: 52,
       columnNumber: 9
     }
   }, __jsx(baffle_react__WEBPACK_IMPORTED_MODULE_7__["default"], {
@@ -42727,10 +42847,28 @@ function Home() {
     __self: this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 57,
+      lineNumber: 53,
       columnNumber: 11
     }
-  }, " Featured Projects")))));
+  }, " Featured Projects"))), __jsx(_components_project__WEBPACK_IMPORTED_MODULE_8__["default"], {
+    name: "stock_bot",
+    length: "short",
+    __self: this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 63,
+      columnNumber: 7
+    }
+  }), __jsx(_components_project__WEBPACK_IMPORTED_MODULE_8__["default"], {
+    name: "hairable",
+    length: "short",
+    __self: this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 64,
+      columnNumber: 7
+    }
+  })));
 } // if i want to use JS to load, and keep static parts: https://swr.vercel.app/
 // export async function getServerSideProps(context) {
 //   return {
@@ -42739,6 +42877,31 @@ function Home() {
 //     }
 //   }
 // }
+
+/***/ }),
+
+/***/ "./public/project_data/project_descriptions.js":
+/*!*****************************************************!*\
+  !*** ./public/project_data/project_descriptions.js ***!
+  \*****************************************************/
+/*! exports provided: desc */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "desc", function() { return desc; });
+var desc = {
+  stock_bot: {
+    title: "st0ck_b0t",
+    "short": "Unintelligent stock investing robot written in Python. WIP with plans to display a graph of the account balance under it's project page.",
+    "long": "TBD"
+  },
+  hairable: {
+    title: "haiRable",
+    "short": "An iOS app developed at nwHacks which analyses the users face using Machine Learning to suggest the best possible haircut.",
+    "long": "We used Face API provided by Cognitive Services of Microsoft Azure to analyse the User's face. We trained on Chicago Face Database to analyse the person face shape and according assign the best haircut. The Front End was done on Swift and we used CoreML to acces Azure."
+  }
+};
 
 /***/ }),
 
@@ -42803,7 +42966,7 @@ if (true) {
 
 /***/ }),
 
-/***/ 2:
+/***/ 1:
 /*!*****************************************************************************************************************************************************************************!*\
   !*** multi next-client-pages-loader?page=%2F&absolutePagePath=%2Fmnt%2Fc%2FUsers%2Fkalik%2FDocuments%2FPERSONAL%2FPERSONAL_PROJECTS%2Fkarisme.github.io%2Fpages%2Findex.js ***!
   \*****************************************************************************************************************************************************************************/
@@ -42826,5 +42989,5 @@ module.exports = dll_c2e10d183b950a67d9e7;
 
 /***/ })
 
-},[[2,"static/runtime/webpack.js"]]]);
+},[[1,"static/runtime/webpack.js"]]]);
 //# sourceMappingURL=index.js.map
